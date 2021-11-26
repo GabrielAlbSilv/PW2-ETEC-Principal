@@ -10,7 +10,9 @@
         mysqli_connect_error();
     }else{
 
-        echo"conexão aberta";
+        echo"Conexão aberta";
+        mysqli_close($con); //encerrando sessão
+        echo"<br> <br> <br> Conexão encerrada";
     }
 
 
